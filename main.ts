@@ -1,1 +1,3 @@
-console.log("Hello World!");
+import message from "./greet";
+
+console.log(message);
