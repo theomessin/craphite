@@ -1,3 +1,8 @@
 import message from "./greet";
+import { createServer } from "node:http";
 
-console.log(message);
+const server = createServer((req, res) => {
+    res.write(message);
+});
+
+server.listen(3000);
