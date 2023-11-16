@@ -23,3 +23,7 @@ tasks:
       - "**/*"
     outputs:
       - "**/*"
+
+  dev:
+    command: "node -r @swc-node/register --watch src/server.ts"
+    local: true
