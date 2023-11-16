@@ -1,0 +1,12 @@
+# pnpm
+node_modules
+
+# moon
+.moon/cache
+.moon/docker
+
+# mac
+.DS_Store
+
+# generated
+*.generated.*

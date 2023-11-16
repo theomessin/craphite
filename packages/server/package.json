@@ -1,0 +1,15 @@
+{
+  "name": "@craphite/server",
+  "dependencies": {
+    "graphql": "^16.8.1",
+    "graphql-yoga": "^5.0.0"
+  },
+  "devDependencies": {
+    "@eddeee888/gcg-typescript-resolver-files": "^0.7.1",
+    "@graphql-codegen/cli": "^5.0.0",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@tsconfig/node20": "^20.1.2",
+    "prettier": "^3.1.0",
+    "typescript": "^5.2.2"
+  }
+}

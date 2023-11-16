@@ -1,0 +1,25 @@
+language: typescript
+
+tasks:
+  codegen:
+    command: "graphql-codegen"
+    inputs:
+      - "src/schema/**/*"
+      - "codegen.ts"
+      - "tsconfig.ts"
+
+  typecheck:
+    deps:
+      - codegen
+    command: "tsc"
+    inputs:
+      - "src/**/*"
+      - "tsconfig.json"
+    outputs:
+
+  format:
+    command: "prettier --write ."
+    inputs:
+      - "**/*"
+    outputs:
+      - "**/*"
