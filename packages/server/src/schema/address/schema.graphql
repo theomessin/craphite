@@ -1,0 +1,17 @@
+extend type Query {
+  address: [Address!]!
+}
+
+interface Address {
+  id: ID!
+}
+
+type ExternalAddress implements Address {
+  id: ID!
+  contactName: String!
+}
+
+type InternalAddress implements Address {
+  id: ID!
+  username: String!
+}

@@ -1,0 +1,2 @@
+schema: package/server/src/schema/**/schema.graphql
+
